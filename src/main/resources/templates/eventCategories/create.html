@@ -5,13 +5,15 @@
 
 <header th:replace="fragments :: header"></header>
 
-<p th:text="${errorMsg}" style="color:red;"></p>
 <form method="post">
     <div class="form-group">
         <label>Name
-            <input type="text" th:field="${event.name}" class="form-control" />
+            <input th:field="${eventCategory.name}" class="form-control">
         </label>
-        <p class="error" th:errors="${event.name}"></p>
+        <span th:errors="${eventCategory.name}" class="error"></span>
     </div>
+    <input type="submit" value="Create" class="btn btn-primary">
+</form>
+
 </body>
 </html>
