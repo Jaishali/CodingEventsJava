@@ -9,8 +9,8 @@ import jakarta.validation.constraints.Size;
 
 import java.util.Objects;
 @Entity
-public class Event {
-    @Id
+public class Event extends AbstractEntity {
+  /*  @Id
     @GeneratedValue
         private int id;
         private static int nextId = 1;
@@ -90,5 +90,5 @@ private EventType type;
     @Override
     public int hashCode() {
         return Objects.hash(id);
-    }
+    }*/
 }

@@ -9,9 +9,9 @@ import java.util.Objects;
 
 
     @Entity
-    public class EventCategory {
+    public class EventCategory extends AbstractEntity {
 
-        @Id
+      /*  @Id
         @GeneratedValue
         private int id;
 
@@ -52,6 +52,6 @@ import java.util.Objects;
         @Override
         public int hashCode() {
             return Objects.hash(id);
-        }
+        }*/
 
 }
